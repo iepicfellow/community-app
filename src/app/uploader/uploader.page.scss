@@ -1,0 +1,28 @@
+.camera {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: black;
+}
+
+.background{
+    --background: url(/assets/back2.jpg);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.round {
+    --width: 100px;
+    --height: 100px;
+    --vertical-align: middle;
+    --padding-start: 10px;
+    --padding-end: 10px;
+  }
+
+.card2 {
+    background: url(/assets/back2.jpg);
+}
+
+.text {
+    color: white;
+}

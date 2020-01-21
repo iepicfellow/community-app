@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar class = "background">
+    
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title style="text-align: center;"><h1 style="color: white; font-family: 'Poppins', sans-serif;">Order Groceries</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="canvas">
+  <ion-card>
+    <img src="./assets/lettuce.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Healthy Food</ion-card-subtitle>
+      <ion-card-title>Lettuce</ion-card-title>
+    </ion-card-header>
+    <ion-icon name="ios-remove-circle" (click)="decrement()" class="dec"></ion-icon>
+    <div class="dec">{{currentNumber}}</div>
+    <ion-icon name="ios-add-circle" (click)="increment()" class="dec"></ion-icon>
+  </ion-card><ion-card>
+    <img src="./assets/onions.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Healthy Food</ion-card-subtitle>
+      <ion-card-title>Onions</ion-card-title>
+    </ion-card-header>
+    <ion-icon name="ios-remove-circle" (click)="decrement2()" class="dec"></ion-icon>
+    <div class="dec">{{currentNumber2}}</div>
+    <ion-icon name="ios-add-circle" (click)="increment2()" class="dec"></ion-icon>
+  </ion-card>
+  <ion-card>
+    <img src="./assets/eggp.webp" />
+    <ion-card-header>
+      <ion-card-subtitle>Healthy Food</ion-card-subtitle>
+      <ion-card-title>egg plant</ion-card-title>
+    </ion-card-header>
+    <ion-icon name="ios-remove-circle" (click)="decrement3()" class="dec"></ion-icon>
+    <div class="dec">{{currentNumber3}}</div>
+    <ion-icon name="ios-add-circle" (click)="increment3()" class="dec"></ion-icon>
+  </ion-card>
+  <ion-card>
+    <img src="./assets/steak.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Healthy Food</ion-card-subtitle>
+      <ion-card-title>Steak</ion-card-title>
+    </ion-card-header>
+    <ion-icon name="ios-remove-circle" (click)="decrement4()" class="dec"></ion-icon>
+    <div class="dec">{{currentNumber4}}</div>
+    <ion-icon name="ios-add-circle" (click)="increment4()" class="dec"></ion-icon>
+
+    
+  </ion-card>
+  <ion-button (click) = "submit()">Order Now </ion-button>
+      
+
+
+</ion-content>

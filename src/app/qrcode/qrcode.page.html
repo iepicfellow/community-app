@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar class = "background">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title style="text-align: center;"><h1 style="color: white; font-family: 'Poppins', sans-serif;">QR Code</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-input type = "text" placeholder="Enter Text" [(ngModel)] = "qrdata"></ion-input>
+
+    <ion-button expand="full" color="secondary" (click) = "create()">Generate</ion-button>
+    <ion-button expand ="full" color="secondary" (click) = "clear()">Clear</ion-button>
+
+  <ion-card *ngIf="createCode">
+      <ngx-qrcode [qrc-value]="createCode"></ngx-qrcode>
+    <ion-card-content>
+      Your QR Code: {{createCode}}
+    </ion-card-content>
+  </ion-card>
+  
+  <div>
+    <ion-card class = "card2">
+      <ion-card-header>
+        <ion-card-title><h1><b>Instructions</b></h1></ion-card-title>
+      </ion-card-header>
+        <ion-card-content class = "text">
+          Take a screenshot of the QR code, and send to receving party.
+        </ion-card-content>
+      </ion-card>
+  </div>
+  
+</ion-content>
+ 

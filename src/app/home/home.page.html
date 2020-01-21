@@ -1,0 +1,119 @@
+
+<ion-header>
+  <ion-toolbar class = "background">
+    <ion-title style="text-align: center; font-family: 'Poppins', sans-serif;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div> 
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-card class = "card1" @slidelefttitle>
+        <ion-card-header>
+          <ion-card-title><h1><b>Welcome to Soteria</b></h1></ion-card-title>
+        </ion-card-header>
+
+        <div class = "text1">
+          <ion-card-content>
+            Welcome to the Community Security App! To get started Log In or Register Below.
+            We Promise to put all our effort to keep you safe in your homes, as well as giving the community
+            more important features!
+          </ion-card-content>
+        </div>
+        </ion-card>
+      </ion-slide>
+      
+      <ion-slide>
+        <ion-card class = "card2">
+          <ion-card-header>
+            <ion-card-title><h1><b>About Us</b></h1></ion-card-title>
+          </ion-card-header>
+        
+          <div class = "text1">
+            <ion-card-content>
+              We revolutionize security by bringing top of the line techs into your commuinty 
+              and protecting your assets. We are Soteria the 
+              friendly security company that aims to prevent theft and break ins 
+              withouth affecting your privacy!
+            </ion-card-content>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <div>
+    <ion-slides pager="true">
+
+      <ion-slide>
+        <ion-card @slidelefttitle>
+          <ion-card-header>
+            <ion-card-subtitle> Swipe to Register --> </ion-card-subtitle>
+          </ion-card-header>
+          <form #form="ngForm" (ngSubmit)="login()">
+            <ion-grid>
+              <ion-row color="primary" justify-content-center>
+                <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                  <div text-center>
+                    <h1>Login</h1>
+                  </div>
+                  <div padding >
+                    <ion-item>
+                      <ion-input name="email" type="text" placeholder="username" [(ngModel)]="username"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-input name="password" type="password" placeholder="Password" [(ngModel)] = "password" ></ion-input>
+                    </ion-item>
+                  </div>
+                  <div padding>
+                    <ion-button size="large" expand="block" (click) = "login()">Login</ion-button>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </form>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <form #form="ngForm" (ngSubmit)="login()">
+            <ion-grid>
+              <ion-row color="primary" justify-content-center>
+                <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                  <div text-center>
+                    <h1>Register</h1>
+                  </div>
+                  <div padding>
+                    <ion-item>
+                      <ion-input name="email" type="text" placeholder="username" [(ngModel)]="usernamer"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-input name="password" type="password" placeholder="Password" [(ngModel)]="passwordr"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-input name="password" type="password" placeholder="Confirm Password" [(ngModel)]="cpassword"></ion-input>
+                    </ion-item>
+                  </div>
+                  <div padding>
+                    <ion-button size="large" expand="block" (click) = "register()">Register</ion-button>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </form>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class = "background">
+    <ion-title style="text-align: center; font-family: 'Poppins', sans-serif;">Welcome Home!</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

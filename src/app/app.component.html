@@ -1,0 +1,48 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu side="start" type="overlay" [swipeGesture] = "false">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Soteria</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          
+          <ion-item [routerLink] = "['/tabs']">
+            <ion-label>Dashboard</ion-label>
+          </ion-item>
+          
+          <ion-item [routerLink] = "['/account']">
+            <ion-label>Account</ion-label>
+          </ion-item>
+
+          <ion-item [routerLink] = "['/hire']">
+            <ion-label>Hire!</ion-label>
+          </ion-item>
+
+          <ion-item [routerLink] = "['/ordergroceries']">
+            <ion-label>Order Groceries</ion-label>
+          </ion-item>
+
+          <ion-item [routerLink] = "['/raiseanissue']">
+            <ion-label>Raise An Issue</ion-label>
+          </ion-item>
+
+          <ion-item [routerLink] = "['/qrcode']">
+            <ion-label>QR Code</ion-label>
+          </ion-item>
+
+          <ion-item [routerLink] = "['/home']">
+            <ion-button class = "round"><ion-icon name="md-exit"></ion-icon>Log Out</ion-button>
+          </ion-item>
+          
+          
+          
+
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,16 @@
+{
+  "name": "Soteria",
+  "short_name": "Soteria",
+  "theme_color": "#cd00ff",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/icons/lock",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
